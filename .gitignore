@@ -1,0 +1,4 @@
+/dados_brutos/*.html
+parsed_videos.json
+raw_data.feather
+.ipynb_checkpoints
