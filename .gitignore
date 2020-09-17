@@ -2,3 +2,4 @@
 parsed_videos.json
 raw_data.feather
 .ipynb_checkpoints
+__pycache__

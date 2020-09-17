@@ -9,13 +9,15 @@ from tqdm import tqdm
 
 CURRENT_DIR = os.path.dirname(os.path.abspath(__file__))
 HTML_DIR = os.path.join(CURRENT_DIR, "dados_brutos/")
-TOTAL_DE_PAGINAS_PARA_SALVAR = 3
+TOTAL_DE_PAGINAS_PARA_SALVAR = 30 
 QUERIES = ['machine+learning', 'data+science', "kaggle"]
-URL = "https://www.youtube.com/results?search_query={query}&sp=EgIIAg%253D%253D&p={page}"
+URL = "https://www.youtube.com/results?search_query={query}&sp=CAI%253D&p={page}"
 
 
 def buscar_paginas():
     for query in tqdm(QUERIES, "Buscando páginas no youtube"):
+        if query == 'machine+learning':
+            continue
         for page in range(1, TOTAL_DE_PAGINAS_PARA_SALVAR+1):
             session = HTMLSession()
             # inserindo a query e o numero da pagina na url
