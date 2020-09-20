@@ -1,0 +1,3 @@
+modelos/*.pkl.z
+.vscode/
+src/data/*.json

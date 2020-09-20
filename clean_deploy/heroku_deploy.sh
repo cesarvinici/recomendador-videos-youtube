@@ -1,9 +1,9 @@
 #!/bin/bash
 
 echo "Pushing..."
-heroku container:push web -a murmuring-peak-72081
+heroku container:push web -a cesar-youtube-recomender
 
 echo "Releasing..."
-heroku container:release web -a murmuring-peak-72081
+heroku container:release web -a cesar-youtube-recomender
 echo "Opening..."
-heroku open -a murmuring-peak-72081
+heroku open -a cesar-youtube-recomender
